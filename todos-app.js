@@ -10,13 +10,13 @@ const filters = {
 renderTodos(todos, filters)
 
 // filters todos
-document.querySelector('#search-text').addEventListener('input', function (e) {
+document.querySelector('#search-text').addEventListener('input', (e) => {
   filters.searchText = e.target.value
   renderTodos(todos, filters)
 })
 
 // add a new todo
-document.querySelector('#new-todo').addEventListener('submit', function (e) {
+document.querySelector('#new-todo').addEventListener('submit', (e) => {
   e.preventDefault()
   todos.push({
     id: uuidv4(),
@@ -29,7 +29,7 @@ document.querySelector('#new-todo').addEventListener('submit', function (e) {
 })
 
 //hide todos checkbox
-document.querySelector('#hide-todos').addEventListener('change', function (e){
+document.querySelector('#hide-todos').addEventListener('change', (e) => {
   filters.hideCompleted = e.target.checked
   renderTodos(todos, filters)
 })
