@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <h1>the $1000 todo-app</h1>
+    <h2>Relax your memory muscle</h2>
+    <label>
+      Filter: <input id='search-text' type="text" placeholder='type here to find note'>
+    </label>
+
+    <label>
+      <input id='hide-todos' type="checkbox">Hide completed todos
+    </label>
+
+    <div id='todos'></div>
+
+    <form id='new-todo'>
+      <input type="text" placeholder='type todo text' name='todoText'>
+      <button>Submit</button>
+    </form>
+
+    <script src="uuidv4.js"></script>
+    <script src='todos-functions.js'></script>
+    <script src='todos-app.js'></script>
+  </body>
+</html>
