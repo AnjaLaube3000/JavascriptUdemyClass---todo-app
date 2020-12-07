@@ -4,7 +4,7 @@ uuidv4()
 // fetch existing data from localStorage
 const getSavedTodos = () => {
   const todosJSON = localStorage.getItem('todos')
-  return todosJSON !== null ? JSON.parse(todosJSON) : []
+  return todosJSON ? JSON.parse(todosJSON) : []
 }
 
 // save todos to localStorage
@@ -44,7 +44,7 @@ const toggleTodo = (id) => {
 // wenn checkmark gesetzt wird, dann muss sich das note.completed = true asignen
   const todo = todos.find((todo) => todo.id === id)
 
-  if (todo !== undefined) {
+  if (todo) {
     todo.completed = !todo.completed
   }
 }
