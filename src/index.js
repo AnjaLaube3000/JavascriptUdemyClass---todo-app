@@ -5,7 +5,8 @@
 // --
 
 // Add necessary imports
-import  { setFilters, getFilters } from './filters'
+// import  { setFilters, getFilters } from './filters'
+import { getTodos, createTodos, removeTodo, toggleTodo } from './todos'
 
 // Render initial todos
 
@@ -16,3 +17,7 @@ import  { setFilters, getFilters } from './filters'
 // Set up form submission handler
 
 // Bonus: Add a watcher for local storage
+
+console.log(getTodos())
+removeTodo('37250ffb-59db-4931-bf70-64955d17d3e0')
+console.log(getTodos())
