@@ -24,8 +24,7 @@ const getTodos = () => todos
 
 
 //create todos
-
-const createTodos = (text) => {
+const createTodo = (text) => {
   todos.push({
     id: uuidv4(),
     text,
@@ -55,8 +54,6 @@ const toggleTodo = (id) => {
   }
 }
 
-
 loadTodos()
-// // Make sure to call loadTodos and setup the exports
 
-export { getTodos, createTodos, removeTodo, toggleTodo }
+export { getTodos, createTodo, removeTodo, toggleTodo }
